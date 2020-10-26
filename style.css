@@ -28,6 +28,23 @@ h1 {
 	text-shadow: .05em .05em 0 #2821d6, 0 0 5px #1b08f7; 
 }
 
+h2 {
+	color: #d2acfd;
+	text-align: center;
+	font-family: 'Sansita Swashed', cursive;
+	font-size: 2em;
+	text-shadow: .05em .05em 0 #2821d6; 
+}
+
+h3 {
+	text-align: center;
+	font-family: 'Sansita Swashed', cursive;
+}
+
+p {
+	text-align: center;
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -72,6 +89,31 @@ a.button:hover {
 	transition: 0.3s;
 }
 
+.recipe {
+	margin: auto;
+	width: 50%;
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+}
+
+.description {
+	text-align: left;
+	padding: 0.5em;
+	margin: 0.5em;
+	background-color: #ffcc72;
+	color: #8a1f68;
+	flex: 1 1 150px;
+	border-radius: 25px;
+	box-shadow: 0.5em 0.5em 0 0 #e99e1a;
+}
+
+.how-to {
+	background-color: #8a1f68;
+	color: #ffcc72;
+	box-shadow: 0.5em 0.5em 0 0 #380227;
+}
+
 .vibing-cat {
 	position: absolute;
 	bottom: 0;
@@ -92,10 +134,21 @@ a.button:hover {
 }
 
 .dancing-doge {
-	position: absolute;
 	bottom: 0;
 	left: 0;
 	width: 7em;
+}
+
+.cake {
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+	width: 9em;
+}
+
+ul {
+	list-style-image: url('res/star.png');
 }
 
 /* Confetti animation, thanks to @pajasevi */
@@ -264,6 +317,10 @@ a.button:hover {
    a.button {
 	   width: 65%;
    }
+   
+   .recipe {
+	width: 70%;
+}
    
    .dancing-cat {
 	   margin-top: 1em;
